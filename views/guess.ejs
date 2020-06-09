@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <% if(guess == num){%>
+                <h1>Correct!</h1>
+                <a href="/reset">Play again?</a>
+            <% } else if(guess>num){ %>
+                <h1>WRONG</h1>
+                <p>Too high!</p>
+                <a href="/">Try again!</a>
+            <% } else { %>
+                <h1>WRONG</h1>
+                <p>Too low!</p>
+                <a href="/">Try again!</a>
+            <% } %>
+        </div>
+    </div>
+</body>
+</html>
